@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { ListaComponent } from './lista/lista.component';
 import { FormComponent } from './form/form.component';
 import { DescrComponent } from './descr/descr.component';
+import { OfertaComponent } from './lista/oferta/oferta.component';
+import { FiltroComponent } from './lista/filtro/filtro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
     FormComponent,
-    DescrComponent
+    DescrComponent,
+    OfertaComponent,
+    FiltroComponent
   ],
   imports: [
     BrowserModule,
