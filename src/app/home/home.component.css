@@ -1,0 +1,28 @@
+.row{
+    padding-top: 300px;
+    text-align: center;
+}
+.jumbotron {
+    background-image: url(/assets/animacion.gif);
+    background-size: cover;
+    height: 100vh;
+}
+.logo {
+    width: 90%;
+}
+.btn-lg.btn-default{
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #f1f1f1;
+    border-radius: 0;
+    border: none;
+}
+.btn-lg.btn-default:hover {
+    background-color: #8DC63F;
+    color: #000;
+}
+.btn-group{
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 20px;
+}

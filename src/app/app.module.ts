@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { ListaComponent } from './lista/lista.component';
 import { FormComponent } from './form/form.component';
 import { DescrComponent } from './descr/descr.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
     FormComponent,
-    DescrComponent
+    DescrComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
