@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 
 import { OfertaComponent } from './lista/oferta/oferta.component';
 import { FiltroComponent } from './lista/filtro/filtro.component';
+import { DetalleComponent } from './descr/detalle/detalle.component';
 
 
 @NgModule({
@@ -28,7 +29,12 @@ import { FiltroComponent } from './lista/filtro/filtro.component';
     HomeComponent,
 
     OfertaComponent,
+
+    FiltroComponent,
+    DetalleComponent,
+
     FiltroComponent
+
 
   ],
   imports: [
