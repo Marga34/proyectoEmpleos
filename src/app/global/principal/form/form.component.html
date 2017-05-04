@@ -1,43 +1,103 @@
-<form>
-  <div class="form-group">
-    <label for="Empresa">Nombre de la empresa</label>
-    <input type="text" class="form-control" id="Empresa" placeholder="Ej: Teléfonica" required>
+<form id="Decr_resumen">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <h3>Nombre de la empresa</h3>
+        <input type="text" class="form-control" id="Empresa" placeholder="Ej: Teléfonica" required>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="Logo"></label>
+        <img src="..." alt="..." class="img-rounded">
+        <div class="form-group">
+          <input type="file">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="Puesto">Puesto de trabajo</label>
-    <input type="text" class="form-control" id="Puesto" placeholder="Ej: Programador junior" required>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="Puesto">Puesto de trabajo</label>
+        <input type="text" class="form-control" id="Puesto" placeholder="Ej: Programador junior" required>
+      </div>
+      <div class="form-group">
+        <label for="Provincia">Área geográfica</label>
+        <input type="text" class="form-control" id="Provincia" placeholder="Ej: Madrid, Madrid (España)" required>
+      </div>
+      <div class="form-group">
+        <label for="Fecha">Fecha de publicación</label>
+        <input type="text" class="form-control" id="Fecha" placeholder="Ej: 11/05/2017" required>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="Salario">Salario</label>
+        <select class="form-control">
+        <option>18.000 - 24.000€ bruto/año</option>
+        <option>24.000 - 30.000€ bruto/año</option>
+        <option>30.000 - 36.000€ bruto/año</option>
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="Experiencia">Experiencia</label>
+        <select class="form-control">
+        <option>Sin experiencia</option>
+        <option>Menos de 3 años</option>
+        <option>Más de 5 años</option>
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="Contrato">Tipo de contrato</label>
+        <select class="form-control">
+        <option>Temporal</option>
+        <option>Indefinido</option>
+        <option>Fijo</option>
+      </select>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="Provincia">Área geográfica</label>
-    <input type="text" class="form-control" id="Provincia" placeholder="Ej: Madrid, Madrid (España)" required>
-  </div>
-  <div class="form-group">
-    <label for="Fecha">Fecha de publicación</label>
-    <input type="text" class="form-control" id="Fecha" placeholder="Ej: 11/05/2017" required>
-  </div>
-  <div class="form-group">
-    <label for="Salario">Salario</label>
-    <select class="form-control">
-      <option>18.000 - 24.000€ bruto/año</option>
-      <option>24.000 - 30.000€ bruto/año</option>
-      <option>30.000 - 36.000€ bruto/año</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="Experiencia">Experiencia</label>
-     <select class="form-control">
-      <option>Sin experiencia</option>
-      <option>Menos de 3 años</option>
-      <option>Más de 5 años</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="Contrato">Tipo de contrato</label>
-     <select class="form-control">
-      <option>Temporal</option>
-      <option>Indefinido</option>
-      <option>Fijo</option>
-    </select>
-  </div>
-  <button type="enviar" class="btn btn-default">Enviar</button>
+
 </form>
+
+
+  <form id="Descr_general">
+    <h4>Requisitos</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="Requisitos">Requisitos mínimos</label>
+          <div class="radio">
+            <label><input type="radio" value="option1">JavaScript</label><br>
+            <label><input type="radio" value="option1">Angular Cli</label><br>
+            <label><input type="radio" value="option1">JQuery</label><br>
+            <label><input type="radio" value="option1">HTML</label><br>
+            <label><input type="radio" value="option1">CSS</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Descripción">Descripción</label>
+          <br>
+          <textarea name="mensaje" placeholder="Breve descripción de la oferta laboral" rows="5" cols="85"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="vacantes">Número de vacantes</label>
+          <input type="num" class="form-control" id="vacantes" placeholder="Ej: 2" required>
+        </div>
+        <div class="form-group">
+          <label for="Salario">Horario</label>
+          <select class="form-control">
+           <option>L - J: 9:00 a 18:30, V: 9:00 a 15:00</option>
+           <option>L - V: 9:00 a 15:00</option>
+          </select>
+        </div>
+        <div>
+          <button type="enviar" class="btn btn-default">Enviar oferta</button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+
