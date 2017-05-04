@@ -4,17 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ROUTING } from './app.routing';
 import { AppComponent } from './app.component';
-import { ListaComponent } from './lista/lista.component';
-import { FormComponent } from './form/form.component';
-import { DescrComponent } from './descr/descr.component';
+import { ListaComponent } from './global/principal/lista/lista.component';
+import { FormComponent } from './global/principal/form/form.component';
+import { DescrComponent } from './global/principal/descr/descr.component';
 
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './global/header/header.component';
+import { FooterComponent } from './global/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
-import { OfertaComponent } from './lista/oferta/oferta.component';
-import { FiltroComponent } from './lista/filtro/filtro.component';
-import { DetalleComponent } from './descr/detalle/detalle.component';
+
+import { FiltroComponent } from './global/principal/lista/filtro/filtro.component';
+import { GlobalComponent } from './global/global.component';
+import { PrincipalComponent } from './global/principal/principal.component';
+
+
 
 
 @NgModule({
@@ -23,19 +26,12 @@ import { DetalleComponent } from './descr/detalle/detalle.component';
     ListaComponent,
     FormComponent,
     DescrComponent,
-
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-
-    OfertaComponent,
-
     FiltroComponent,
-    DetalleComponent,
-
-    FiltroComponent
-
-
+    GlobalComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,

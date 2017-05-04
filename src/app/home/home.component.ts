@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
   }
 
   navegarAlaLista(){
-    this.router.navigate(['lista']);
+    this.router.navigate(['global','lista']);
   }
 
   navegarAlForm(){
-    this.router.navigate(['form']);
+    this.router.navigate(['global','form']);
   }
 
 }
