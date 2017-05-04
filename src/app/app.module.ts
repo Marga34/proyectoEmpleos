@@ -14,11 +14,11 @@ import { HomeComponent } from './home/home.component';
 
 import { OfertaComponent } from './lista/oferta/oferta.component';
 import { FiltroComponent } from './lista/filtro/filtro.component';
-<<<<<<< HEAD
+
 import { FormularioComponent } from './form/formulario/formulario.component';
-=======
+
 import { DetalleComponent } from './descr/detalle/detalle.component';
->>>>>>> 538fe5f97994732854385a666030b5f0e907ef94
+
 
 
 @NgModule({
@@ -33,20 +33,12 @@ import { DetalleComponent } from './descr/detalle/detalle.component';
     HomeComponent,
 
     OfertaComponent,
-<<<<<<< HEAD
-
     FiltroComponent,
     FormularioComponent,
-    FiltroComponent
-=======
-
+    FiltroComponent,
     FiltroComponent,
     DetalleComponent,
-
     FiltroComponent
-
-
->>>>>>> 538fe5f97994732854385a666030b5f0e907ef94
   ],
   imports: [
     BrowserModule,
