@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
+
+footer {
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.icon{
+    width: 4%;
+}

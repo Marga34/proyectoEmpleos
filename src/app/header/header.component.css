@@ -1,0 +1,15 @@
+.logo {
+    width: 20%;
+    margin: 10px;
+}
+.navbar {
+    background-color: black;
+    margin-bottom: 0;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+.navbar-nav li a:hover {
+    color: #8DC63F;
+}
