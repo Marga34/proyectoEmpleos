@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { DescrComponent } from './descr/descr.component';
 import { OfertaComponent } from './lista/oferta/oferta.component';
 import { FiltroComponent } from './lista/filtro/filtro.component';
+import { DetalleComponent } from './descr/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FiltroComponent } from './lista/filtro/filtro.component';
     FormComponent,
     DescrComponent,
     OfertaComponent,
-    FiltroComponent
+    FiltroComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
