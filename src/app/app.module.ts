@@ -12,10 +12,13 @@ import { HeaderComponent } from './global/header/header.component';
 import { FooterComponent } from './global/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
+
 import { FiltroComponent } from './global/principal/lista/filtro/filtro.component';
-import { DetalleComponent } from './global/principal/descr/detalle/detalle.component';
 import { GlobalComponent } from './global/global.component';
 import { PrincipalComponent } from './global/principal/principal.component';
+import { OfertaComponent } from './global/principal/lista/filtro/oferta.component';
+
+
 
 
 @NgModule({
@@ -24,22 +27,13 @@ import { PrincipalComponent } from './global/principal/principal.component';
     ListaComponent,
     FormComponent,
     DescrComponent,
-
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-
-
     FiltroComponent,
-    DetalleComponent,
-
-    FiltroComponent,
-
     GlobalComponent,
-
-    PrincipalComponent
-
-
+    PrincipalComponent,
+    OfertaComponent
   ],
   imports: [
     BrowserModule,
