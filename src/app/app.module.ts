@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { FiltroComponent } from './global/principal/lista/filtro/filtro.component';
 import { GlobalComponent } from './global/global.component';
 import { PrincipalComponent } from './global/principal/principal.component';
+import { ServicioService } from './global/principal/lista/servicio.service';
 
 
 
@@ -39,7 +40,7 @@ import { PrincipalComponent } from './global/principal/principal.component';
     HttpModule,
     ROUTING
   ],
-  providers: [],
+  providers: [ServicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

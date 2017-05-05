@@ -1,3 +1,12 @@
-<button type="button" (click)="navegarAlDescr()" class="btn-lg btn-default">Descripción</button>
-<router-outlet></router-outlet>
-<a [routerLink]="['descr']">Descripción</a>
+<div id="lista">
+<input type="text" #id>
+<input type="text" #nombre>
+<input type="text" #puesto>
+<input type="text" #area>
+<input type="text" #experiencia>
+<input type="text" #contrato>
+<button type="button" (click)="guardarDato(id.value, nombre.value, puesto.value, area.value, experiencia.value, contrato.value)">Añadir Oferta</button>
+<ul>
+    <div *ngFor="let item of items"><p>{{item.id}}</p><p>{{item.nombre}}<p>{{item.puesto}}<p>{{item.area}}<p>{{item.experiencia}}<p>{{item.contrato}}</div>
+</ul>
+</div>

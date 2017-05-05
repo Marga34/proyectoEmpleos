@@ -1,5 +1,5 @@
 export class Oferta {
-    constructor(private logo: any, private titulo: string, private resumen: string){
+    constructor(public id: number, public nombre: string, public puesto: string, public area: string, public experiencia: string, public contrato) {
 
     }
 }
