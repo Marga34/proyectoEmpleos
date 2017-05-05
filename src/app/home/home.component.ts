@@ -13,12 +13,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  navegarAlaLista(){
-    this.router.navigate(['global','lista']);
+  navegarAlaLista() {
+    this.router.navigate(['global', 'lista']);
   }
 
-  navegarAlForm(){
-    this.router.navigate(['global','form']);
+  navegarAlForm() {
+    this.router.navigate(['global', 'form']);
   }
 
 }

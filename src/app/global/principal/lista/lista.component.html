@@ -1,3 +1,2 @@
-<button type="button" (click)="navegarAlDescr()" class="btn-lg btn-default">Descripción</button>
-<router-outlet></router-outlet>
-<a [routerLink]="['descr']">Descripción</a>
+<app-oferta class="medio" *ngFor="let oferta of ofertas" [oferta] = "oferta"></app-oferta>
+<!--public id: number, public nombre: string, public puesto: string, public area: string, public experiencia: string, public contrato)!-->

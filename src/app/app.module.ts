@@ -11,11 +11,12 @@ import { DescrComponent } from './global/principal/descr/descr.component';
 import { HeaderComponent } from './global/header/header.component';
 import { FooterComponent } from './global/footer/footer.component';
 import { HomeComponent } from './home/home.component';
-
+import { ServicioService } from './global/principal/lista/servicio.service';
 
 import { FiltroComponent } from './global/principal/lista/filtro/filtro.component';
 import { GlobalComponent } from './global/global.component';
 import { PrincipalComponent } from './global/principal/principal.component';
+import { OfertaComponent } from './global/principal/lista/oferta/oferta.component';
 
 
 
@@ -31,7 +32,8 @@ import { PrincipalComponent } from './global/principal/principal.component';
     HomeComponent,
     FiltroComponent,
     GlobalComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    OfertaComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,7 @@ import { PrincipalComponent } from './global/principal/principal.component';
     HttpModule,
     ROUTING
   ],
-  providers: [],
+  providers: [ServicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
