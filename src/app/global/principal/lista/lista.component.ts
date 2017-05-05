@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ServicioService } from './servicio.service';
 import { Oferta } from './oferta';
+import { Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-lista',
@@ -12,14 +13,19 @@ import { Oferta } from './oferta';
 
 export class ListaComponent implements OnInit {
 
+  nombre: string;
+  subscripcion: Subscription;
   ofertas: Array<Oferta> = [];
 
-  constructor(private router: Router, private servicioService: ServicioService) { }
+  constructor(private router: Router, private servicioService: ServicioService, private activatedRoute: ActivatedRoute) {
+    this.subscripcion = this.activatedRoute.params.subscribe(
+      params => this.nombre = params['nombre']
+    );
+   }
 
   ngOnInit() {
     this.ofertas = this.servicioService.devolverOferta();
   }
-
 
   navegarAlDescr() {
     this.router.navigate(['descr']);
