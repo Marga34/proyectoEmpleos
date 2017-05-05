@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
 form{
-    padding-top: 150px;
-    padding-left: 100px;
-    padding-right: 150px;
+    padding: 100px 200px 100px 200px;
+    
     font-family: 'Josefin Sans', sans-serif;
     font-size: 17px;
 }

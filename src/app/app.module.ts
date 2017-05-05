@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ROUTING } from './app.routing';
+
 import { AppComponent } from './app.component';
 import { ListaComponent } from './global/principal/lista/lista.component';
 import { FormComponent } from './global/principal/form/form.component';
@@ -18,6 +19,7 @@ import { GlobalComponent } from './global/global.component';
 import { PrincipalComponent } from './global/principal/principal.component';
 
 import { OfertaComponent } from './global/principal/lista/oferta/oferta.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -35,13 +37,15 @@ import { OfertaComponent } from './global/principal/lista/oferta/oferta.componen
     FiltroComponent,
     GlobalComponent,
     PrincipalComponent,
-    OfertaComponent
+    OfertaComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    ROUTING
+    ROUTING,
+    ReactiveFormsModule
   ],
   providers: [ServicioService],
   bootstrap: [AppComponent]

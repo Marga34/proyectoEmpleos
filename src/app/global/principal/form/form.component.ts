@@ -1,15 +1,43 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder, FormArray, Validators } from '@angular/forms';
+import { Oferta } from '../lista/oferta';
+import { ServicioService } from '../lista/servicio.service';
+
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
 
-  constructor() { }
+export class FormComponent implements OnInit {
+  miFormulario: FormGroup;
+  ofertas: Array<Oferta> = [];
+
+ constructor( private formBuilder: FormBuilder, private servicioService: ServicioService) {
+    this.miFormulario = new FormGroup({
+      'nombre' : new FormControl(),
+      'password' : new FormControl(),
+      'puesto' : new FormControl(),
+      /*'fecha' : new FormControl(),
+      'provincia' : new FormControl(),
+      'salario' : new FormControl(),
+      'experiencia' : new FormControl(),
+      'contrato' : new FormControl(),
+      'requisitos' : new FormControl(),
+      'descripcion' : new FormControl(),
+      'vacantes' : new FormControl(),
+      'horario' : new FormControl()*/
+    });
+
+  }
+
+ guardarDato(nombre: string, password: string, puesto: string){
+  this.servicioService.anadirOferta( new Oferta(nombre, password, puesto));
+ }
 
   ngOnInit() {
   }
+
 
 }
