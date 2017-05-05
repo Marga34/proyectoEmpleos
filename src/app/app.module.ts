@@ -16,7 +16,9 @@ import { ServicioService } from './global/principal/lista/servicio.service';
 import { FiltroComponent } from './global/principal/lista/filtro/filtro.component';
 import { GlobalComponent } from './global/global.component';
 import { PrincipalComponent } from './global/principal/principal.component';
+
 import { OfertaComponent } from './global/principal/lista/oferta/oferta.component';
+
 
 
 

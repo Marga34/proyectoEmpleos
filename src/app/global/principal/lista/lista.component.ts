@@ -25,4 +25,8 @@ export class ListaComponent implements OnInit {
     this.router.navigate(['descr']);
   }
 
+  guardarDato(dato1:number, dato2:string, dato3:string, dato4:string, dato5:string, dato6:string){
+    this.servicioService.anadirOferta(new Oferta (dato1, dato2, dato3, dato4, dato5, dato6));
+  }
+
 }
