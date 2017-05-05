@@ -12,11 +12,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">VOLVER</a></li>
-        <li><a href="#">EMPLEOS</a></li>
-        <li><a href="#">AGREGAR</a></li>
+        <li><a [routerLink]="['lista']">EMPLEOS</a></li>
+        <li><a [routerLink]="['form']">AGREGAR</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
 </nav>
-
+<router-outlet></router-outlet>
