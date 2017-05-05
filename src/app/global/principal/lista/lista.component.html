@@ -1,2 +1,5 @@
-<app-oferta class="medio" *ngFor="let oferta of ofertas" [oferta] = "oferta"></app-oferta>
+<div class="row">
+    <app-oferta *ngFor="let oferta of ofertas" [oferta] = "oferta"></app-oferta>
+</div>
+
 <!--public id: number, public nombre: string, public puesto: string, public area: string, public experiencia: string, public contrato)!-->

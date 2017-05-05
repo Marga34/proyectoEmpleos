@@ -1,1 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
+.panel.panel-default{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 30px;
+    padding-right: 150px;
+    font-family: 'Josefin Sans', sans-serif;
+}
