@@ -6,6 +6,7 @@
     background-image: url(/assets/animacion.gif);
     background-size: cover;
     height: 100vh;
+    margin: 0px;
 }
 .logo {
     width: 90%;

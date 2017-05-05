@@ -4,6 +4,6 @@ import { FormComponent } from './principal/form/form.component';
 
 
 export const GLOBAL_ROUTES: Routes = [
-    {path:'lista', component: ListaComponent},
-    {path:'form', component: FormComponent}
+    {path: 'lista', component: ListaComponent},
+    {path: 'form', component: FormComponent}
 ];

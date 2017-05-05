@@ -1,3 +1,5 @@
+<app-oferta class="medio" *ngFor="let oferta of ofertas" [oferta] = "oferta"></app-oferta>
+
 <div id="lista">
 <input type="text" #id>
 <input type="text" #nombre>
@@ -6,7 +8,4 @@
 <input type="text" #experiencia>
 <input type="text" #contrato>
 <button type="button" (click)="guardarDato(id.value, nombre.value, puesto.value, area.value, experiencia.value, contrato.value)">Añadir Oferta</button>
-<ul>
-    <div *ngFor="let item of items"><p>{{item.id}}</p><p>{{item.nombre}}<p>{{item.puesto}}<p>{{item.area}}<p>{{item.experiencia}}<p>{{item.contrato}}</div>
-</ul>
-</div>
+
