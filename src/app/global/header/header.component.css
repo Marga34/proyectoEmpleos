@@ -10,8 +10,7 @@
     letter-spacing: 4px;
     opacity:0.9;
     position: fixed;
-    top: 0;
-    left: 0;
+    
 }
 .navbar-nav li a:hover {
     color: #8DC63F;

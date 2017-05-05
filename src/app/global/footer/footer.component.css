@@ -4,13 +4,17 @@ footer {
     background-color: black;
     font-family: 'Josefin Sans', sans-serif;
     color: gray;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    padding: 20px;
-    width: 100%;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+
     
 }
 
 .icon{
     width: 4%;
+    padding-top: 10px;
+    margin: 10px;
 }
