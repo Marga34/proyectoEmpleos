@@ -5,7 +5,9 @@ import { Oferta } from './oferta';
 @Injectable()
 export class ServicioService implements OnInit {
 
+
 private ofertas: Array<Oferta> = [new Oferta ('Mercadona', '4hffjjf', 'Programador'), new Oferta ('Mercadona', '4hffjjf', 'Programador')];
+
 
 ngOnInit() {
 }
