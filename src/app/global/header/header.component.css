@@ -1,10 +1,10 @@
 
 .logo {
-    width: 20%;
-    margin: 10px;
+    width: 255px;
+    padding-top: 15px;
+    padding-left: 20px;
 }
 .navbar {
-    display: block;
     position: fixed;
     background-color: black;
     margin-bottom: 0;
@@ -13,7 +13,65 @@
     letter-spacing: 4px;
     opacity:0.9;
 }
+.navbar-header{
+    height: 110px;
+}
+#myNavbar{
+    padding-top: 60px;
+}
 
 .navbar-nav li a:hover {
     color: #8DC63F;
+}
+
+.search-form .form-group {
+  float: right;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #8DC63F;
+  left: initial;
+  font-size: 14px;
 }

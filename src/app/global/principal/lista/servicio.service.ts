@@ -6,7 +6,7 @@ import { Oferta } from './oferta';
 export class ServicioService implements OnInit {
 
 
-private ofertas: Array<Oferta> = [new Oferta ('Mercadona', '4hffjjf', 'Programador'), new Oferta ('Mercadona', '4hffjjf', 'Programador')];
+private ofertas: Array<Oferta> = [new Oferta ('Mercadona', '4hffjjf', 'Programador'), new Oferta ('Samsung', '4hffjjf', 'Programador'),new Oferta ('Apple', '4hffjjf', 'Programador')];
 
 
 ngOnInit() {

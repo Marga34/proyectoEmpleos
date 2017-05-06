@@ -1,4 +1,4 @@
-
+<header>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -7,16 +7,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand"><img class="logo" src="./assets/logo.png"></a>
+      <a class="navbar-brand"><img class="logo" src="./assets/logoHeader.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">VOLVER</a></li>
         <li><a [routerLink]="['lista']">EMPLEOS</a></li>
         <li><a [routerLink]="['form']">AGREGAR</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li>
+          <form action="" class="search-form">
+            <div class="form-group has-feedback">
+              <label for="search" class="sr-only">Search</label>
+              <input type="text" class="form-control" name="search" id="search" placeholder="search" autocomplete="off">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 <router-outlet></router-outlet>
+</header>

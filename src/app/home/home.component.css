@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 .row{
     padding-top: 300px;
     text-align: center;
@@ -17,6 +18,7 @@
     color: #f1f1f1;
     border-radius: 0;
     border: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .btn-lg.btn-default:hover {
     background-color: #8DC63F;
