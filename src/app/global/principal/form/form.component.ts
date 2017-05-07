@@ -32,8 +32,8 @@ export class FormComponent implements OnInit {
 
   }
 
- guardarDato(nombre: string, password: string, puesto: string){
-  this.servicioService.anadirOferta( new Oferta(nombre, password, puesto));
+ guardarDato(id:number, nombre: string, puesto: string, resumen:string, expandido:string){
+  this.servicioService.anadirOferta( new Oferta(id, nombre, puesto, resumen, expandido));
  }
 
   ngOnInit() {
