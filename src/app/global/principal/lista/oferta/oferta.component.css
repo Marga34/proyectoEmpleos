@@ -17,3 +17,27 @@
     background-color: #8DC63F;
     color: #000;
 }
+
+.btn {
+    border-color: #8DC63F;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: #8DC63F;
+    color: #000;
+}
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff ;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}

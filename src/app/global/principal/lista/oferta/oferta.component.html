@@ -1,13 +1,29 @@
-
 <div class="panel panel-default">
   <div class="panel-body">
     <h3>{{oferta.nombre}}</h3>
     <p>{{oferta.puesto}}</p>
-    <p>{{oferta.area}}</p>
-<a [routerLink]="['/global','lista', oferta.nombre]">Descripcion detallada</a>
-<router-outlet></router-outlet>
+    <!--    <a [routerLink]="['/global','lista', oferta.nombre]">Descripcion detallada</a> -->
+    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Descripcion</button>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">{{oferta.nombre}}</h4>
+          </div>
+          <div class="modal-body">
+            <p>{{oferta.puesto}}</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" [routerLink]="['descr']" data-dismiss="modal">Editar</button>
+            <button type="button" class="btn btn-danger" (click)="eliminaOferta(oferta)" data-dismiss="modal">Eliminar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button type="button" class="btn-xs btn-danger pull-right" (click)="eliminaOferta(oferta)">Eliminar</button>
+    <router-outlet></router-outlet>
   </div>
 </div>
-
-
-

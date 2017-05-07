@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ROUTING } from './app.routing';
+import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { Bootstrap } from 'bootstrap';
 
 import { AppComponent } from './app.component';
 import { ListaComponent } from './global/principal/lista/lista.component';
@@ -20,6 +22,7 @@ import { PrincipalComponent } from './global/principal/principal.component';
 
 import { OfertaComponent } from './global/principal/lista/oferta/oferta.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MiPipePipe } from './mi-pipe.pipe';
 
 
 
@@ -38,14 +41,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     GlobalComponent,
     PrincipalComponent,
     OfertaComponent,
-    
+    MiPipePipe,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     ROUTING,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Ng2Bs3ModalModule
   ],
   providers: [ServicioService],
   bootstrap: [AppComponent]
