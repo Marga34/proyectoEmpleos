@@ -2,6 +2,7 @@
   <div class="panel-body">
     <h3>{{oferta.nombre}}</h3>
     <p>{{oferta.puesto}}</p>
+
     <!--    <a [routerLink]="['/global','lista', oferta.nombre]">Descripcion detallada</a> -->
     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Descripcion</button>
     <div id="myModal" class="modal fade" role="dialog">
@@ -24,6 +25,10 @@
     </div>
     <br>
     <button type="button" class="btn-xs btn-danger pull-right" (click)="eliminaOferta(oferta)">Eliminar</button>
+
+    <!--    <p>{{oferta.resumen}}</p> -->
+    <a [routerLink]="['/global','lista', oferta.nombre]" (click)="mirarOferta(oferta.id)">Descripcion detallada</a>
     <router-outlet></router-outlet>
+
   </div>
 </div>

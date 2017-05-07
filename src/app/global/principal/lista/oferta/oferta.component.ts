@@ -16,12 +16,19 @@ export class OfertaComponent implements OnInit {
 
   @Input() oferta: Oferta;
 
+
   constructor(private servicioService: ServicioService) { }
+
 
   ngOnInit() {
   }
 
+
   eliminaOferta() {
     this.servicioService.borraOferta(Input);
+  }
+
+  mirarOferta(ocupa: number) {
+    this.servicioService.detalleOferta(ocupa);
   }
 }
