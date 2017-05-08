@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ROUTING } from './app.routing';
-import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { Bootstrap } from 'bootstrap';
 
 import { AppComponent } from './app.component';
@@ -49,8 +48,7 @@ import { MiPipePipe } from './mi-pipe.pipe';
     FormsModule,
     HttpModule,
     ROUTING,
-    ReactiveFormsModule,
-    Ng2Bs3ModalModule
+    ReactiveFormsModule
   ],
   providers: [ServicioService],
   bootstrap: [AppComponent]
