@@ -2,7 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Oferta } from '../oferta';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
-import {ServicioService} from '../servicio.service'
+import { ServicioService } from '../servicio.service';
+import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+
 
 
 @Component({
@@ -14,13 +16,19 @@ export class OfertaComponent implements OnInit {
 
   @Input() oferta: Oferta;
 
-  constructor(public servicioService:ServicioService) { }
+
+  constructor(public servicioService: ServicioService) { }
+
 
   ngOnInit() {
   }
 
-  mirarOferta(ocupa: number){
-    this.servicioService.detalleOferta(ocupa);
+
+  eliminaOferta(oferta) {
+    this.servicioService.borraOferta(oferta);
   }
 
+  mirarOferta(ocupa: number) {
+    this.servicioService.detalleOferta(ocupa);
+  }
 }

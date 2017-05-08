@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ROUTING } from './app.routing';
+import { Bootstrap } from 'bootstrap';
 
 import { AppComponent } from './app.component';
 import { ListaComponent } from './global/principal/lista/lista.component';
@@ -20,6 +21,7 @@ import { PrincipalComponent } from './global/principal/principal.component';
 
 import { OfertaComponent } from './global/principal/lista/oferta/oferta.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MiPipePipe } from './mi-pipe.pipe';
 
 
 
@@ -38,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     GlobalComponent,
     PrincipalComponent,
     OfertaComponent,
-    
+    MiPipePipe,
+
   ],
   imports: [
     BrowserModule,

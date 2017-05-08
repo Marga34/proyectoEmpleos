@@ -35,4 +35,5 @@ export class ListaComponent implements OnInit {
     this.servicioService.anadirOferta(new Oferta(id, nombre, puesto, resumen, expandido));
   }
 
+
 }
