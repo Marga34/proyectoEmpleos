@@ -1,3 +1,4 @@
+<!--
 <form [formGroup]="miFormulario" (ngSubmit)="enviarFormulario()">
   <h2>Formulario</h2>
 
@@ -119,11 +120,21 @@
         </div>
       </div>
     
+</form>-->
+
+<div id="lista">
+<span>Nombre</span>
+<input type="text" #nombre>
+<span>Puesto</span>
+<input type="text" #puesto>
+<span>Resumen</span>
+<input type="text" #resumen>
+<span>Expandido</span>
+<input type="text" #expandido>
+</div>
 
     <div class="row">
       <div>
-        <button type="button" class="btn btn-success" (click)="guardarDato(nombre.value, password.value, puesto.value)">Enviar datos</button>
+        <button type="button" class="btn btn-success" (click)="guardarDato(nombre.value, puesto.value, resumen.value, expandido.value)" (click)="navegarAlaLista()">Enviar datos</button>
       </div>
     </div>
-  </div>
-</form>
