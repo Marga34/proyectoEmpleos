@@ -1,0 +1,133 @@
+<div id="editar">
+  <h3>Agregar oferta de empleo</h3>
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <label for="nombre">Nombre de empresa</label>
+      <input type="text" #nombre placeholder="Ej: Teléfonica" value={{nombreNuevo}}>
+    </div>
+
+    <div class="col-md-3">
+      <label for="imagen">Logo</label>
+      <input type="img" #imagenurl placeholder="Ej: url logo telefónica">
+    </div>
+
+    <div class="col-md-3">
+      <label for="puesto">Puesto de trabajo</label>
+      <input type="text" #puesto placeholder="Ej: Programador junior" value={{puestoNuevo}}>
+    </div>
+
+    <div class="col-md-3">
+      <label for="fecha">Fecha de publicación</label>
+      <input type="text" #fecha placeholder="Ej: 11/05/2017">
+    </div>
+
+  </div>
+
+ <br>
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <label for="provincia">Área geográfica</label>
+      <input type="text" #provincia placeholder="Ej: Madrid (España)">
+    </div>
+
+    <div class="col-md-3">
+      <label for="salario">Salario</label>
+      <select #salario>
+              <option>18.000-24.000€ br/año</option>
+              <option>24.000-30.000€ br/año</option>
+              <option>30.000-36.000€ br/año</option>
+              <option>A determinar</option>
+            </select>
+    </div>
+
+    <div class="col-md-3">
+      <label for="experiencia">Experiencia</label>
+      <select #experiencia>
+            <option>Sin experiencia</option>
+            <option>Menos de 1 año</option>
+            <option>Menos de 3 años</option>
+            <option>Más de 5 años</option>
+          </select>
+    </div>
+
+    <div class="col-md-3">
+      <label for="contrato">Tipo de contrato</label>
+      <select #contrato>
+            <option>Prácticas</option>
+            <option>Temporal</option>
+            <option>Indefinido</option>
+            <option>Obra/servicio</option>
+            <option>Freelance</option>
+            <option>A determinar</option>
+          </select>
+    </div>
+
+  </div>
+
+<br>
+
+  <div class="row">
+    <div class="col-md-12">
+      <label for="requisitos">Requisitos mínimos</label>
+      <input id="lenguaje" type="text" #requisitos placeholder="Ej:  JV / HTML5 / CSS / Angular / Jquery / Ruby /  ....">
+    </div>
+    <br>
+    <div class="col-md-12">
+      <label for="descripcion">Descripción</label>
+      <br>
+      <textarea name="mensaje" #descripcion placeholder="Breve descripción de la oferta laboral" rows="3" cols="112"></textarea>
+    </div>
+   </div> 
+
+<br>
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <label for="vacantes">Número de vacantes</label>
+      <input type="num" #vacantes placeholder="Ej: 2">
+    </div>
+
+    <div class="col-md-3">
+      <label for="horario">Horario</label>
+      <select #horario>
+            <option>Jornada Completa</option>
+            <option>Media Jornada</option>
+            <option>Intensivo mañana</option>
+            <option>Intensivo tarde</option>
+            <option>Por horas</option>
+            <option>A determinar</option>
+          </select>
+    </div>
+
+    <div class="col-md-3">
+      <label for="estudios">Estudios mínimos</label>
+      <select #estudios>
+            <option>Ingeniería</option>
+            <option>Ingeniería Técnica</option>
+            <option>Bachillerato</option>
+            <option>Módulo FP2</option>
+            <option>Módulo FP1</option>
+            <option>E.S.O.</option>
+          </select>
+    </div>
+
+    <div class="col-md-3">
+      <label for="otros">Otros datos</label>
+      <input type="text" #otros placeholder=" Ejm; menor de 30 años">
+    </div>
+
+  </div>
+
+<br>
+
+  <div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-7">
+      <button type="button" class="btn btn-success btn-lg" (click)="editarDato(nombre.value,imagenurl.value, puesto.value, fecha.value, provincia.value, salario.value, experiencia.value, contrato.value, requisitos.value, descripcion.value, vacantes.value, horario.value, estudios.value, otros.value)">Cambiar Oferta</button>
+    </div>
+  </div>

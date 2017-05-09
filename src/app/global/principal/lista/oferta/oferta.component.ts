@@ -3,7 +3,7 @@ import { Oferta } from '../oferta';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 import { ServicioService } from '../servicio.service';
-import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { EditarComponent } from '../../editar/editar.component';
 
 
 
@@ -17,7 +17,7 @@ export class OfertaComponent implements OnInit {
   @Input() oferta: Oferta;
 
 
-  constructor(public servicioService: ServicioService) { }
+  constructor(public servicioService: ServicioService, private router: Router) { }
 
 
   ngOnInit() {
@@ -31,4 +31,11 @@ export class OfertaComponent implements OnInit {
   mirarOferta(ocupa: number) {
     this.servicioService.detalleOferta(ocupa);
   }
+
+  navegarEditar(oferta){
+    this.router.navigate(['global', 'editar']);
+    this.servicioService.oferta2=oferta;
+    this.servicioService.borraOferta(oferta); 
+  }
+
 }
