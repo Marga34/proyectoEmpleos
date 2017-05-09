@@ -1,28 +1,11 @@
-<!--<div id="lista">
-<span>Nombre</span>
-<input type="text" #nombre>-
-<span>Puesto</span>
-<input type="text" #puesto>
-<span>Resumen</span>
-<input type="text" #resumen>
-<span>Expandido</span>
-<input type="text" #expandido>
-</div>
-
-    <div class="row">
-      <div>
-        <button type="button" class="btn btn-success" (click)="guardarDato(nombre.value, puesto.value, resumen.value, expandido.value)" (click)="navegarAlaLista()">Enviar datos</button>
-      </div>
-    </div>-->
-
-<div id="formulario">
+<div id="editar">
   <h3>Agregar oferta de empleo</h3>
 
   <div class="row">
 
     <div class="col-md-3">
       <label for="nombre">Nombre de empresa</label>
-      <input type="text" #nombre placeholder="Ej: Teléfonica">
+      <input type="text" #nombre placeholder="Ej: Teléfonica" value={{nombreNuevo}}>
     </div>
 
     <div class="col-md-3">
@@ -32,7 +15,7 @@
 
     <div class="col-md-3">
       <label for="puesto">Puesto de trabajo</label>
-      <input type="text" #puesto placeholder="Ej: Programador junior">
+      <input type="text" #puesto placeholder="Ej: Programador junior" value={{puestoNuevo}}>
     </div>
 
     <div class="col-md-3">
@@ -90,7 +73,7 @@
   <div class="row">
     <div class="col-md-12">
       <label for="requisitos">Requisitos mínimos</label>
-      <input id="lenguajes" type="text" #requisitos placeholder="Ej:  JV / HTML5 / CSS / Angular / Jquery / Ruby /  ....">
+      <input id="lenguaje" type="text" #requisitos placeholder="Ej:  JV / HTML5 / CSS / Angular / Jquery / Ruby /  ....">
     </div>
     <br>
     <div class="col-md-12">
@@ -145,6 +128,6 @@
   <div class="row">
     <div class="col-md-5"></div>
     <div class="col-md-7">
-      <button type="button" class="btn btn-success btn-lg" (click)="guardarDato(nombre.value,imagenurl.value, puesto.value, fecha.value, provincia.value, salario.value, experiencia.value, contrato.value, requisitos.value, descripcion.value, vacantes.value, horario.value, estudios.value, otros.value)">Agregar Oferta</button>
+      <button type="button" class="btn btn-success btn-lg" (click)="editarDato(nombre.value,imagenurl.value, puesto.value, fecha.value, provincia.value, salario.value, experiencia.value, contrato.value, requisitos.value, descripcion.value, vacantes.value, horario.value, estudios.value, otros.value)">Cambiar Oferta</button>
     </div>
   </div>

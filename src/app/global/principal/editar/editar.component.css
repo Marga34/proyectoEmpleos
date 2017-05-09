@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
-#formulario{
+#editar{
     border: 1px solid #8DC63F;
     box-shadow: 0 0 2px 1px #8DC63F inset;
     background-color:#f1f1f1;
@@ -22,7 +22,7 @@ select{
     height:30px;
 }
 
-input#lenguajes{
+input#lenguaje{
     width: 84%;
 
 }

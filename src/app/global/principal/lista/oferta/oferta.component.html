@@ -56,7 +56,7 @@
             
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-info btn-lg" [routerLink]="['descr']" data-dismiss="modal">Editar</button>
+            <button type="button" class="btn btn-info btn-lg" (click)="navegarEditar(oferta)" data-dismiss="modal">Editar</button>
             <button type="button" class="btn btn-danger" (click)="eliminaOferta(oferta)" data-dismiss="modal">Eliminar</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
