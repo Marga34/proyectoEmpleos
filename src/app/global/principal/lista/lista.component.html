@@ -1,8 +1,5 @@
 <div class="lista">
-    <app-filtro></app-filtro>
-   <app-oferta *ngFor="let oferta of ofertas" [oferta]="oferta"></app-oferta>
-
-   <div id="panel-buscador">
+    <div id="panel-buscador">
         <form action="" class="search-form">
                 <div class="form-group has-feedback">
                 <label for="search" class="sr-only">Buscar</label>
@@ -11,6 +8,10 @@
                 </div>
             </form>
     </div>
+    <app-filtro></app-filtro>
+   <app-oferta *ngFor="let oferta of ofertas" [oferta]="oferta"></app-oferta>
+
+   
     
 </div>
 
