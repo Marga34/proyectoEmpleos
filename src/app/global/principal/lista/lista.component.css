@@ -6,28 +6,29 @@
 
 /*----Estilos Buscador---*/
 .panel-buscador{
-    float:right;
+    position: fixed;
     font-family: 'Josefin Sans', sans-serif;
     padding:5px 50px 5px 50px;
-    margin:0 0 20px 10px ; 
-    background-color: black; 
+    margin:0 50px 0 10px ;    
 }
+
  .search-form{
     float:right;
     width: 80%;
     height: 50px;
     font-family: 'Josefin Sans', sans-serif;
-    padding:25px 50px 25px 50px;
-    margin:0px 0 20px 10px ;
-    background-color:#f1f1f1; 
-    box-shadow: 0 0 2px 1px #8DC63F inset; 
+    padding:7px 0px 25px 50px;
+    margin:0px 0 20px 0px ;
+    background-color: #8DC63F; 
+    box-shadow: 0 0 2px 1px #808080 inset; 
 }
 
- .form-group{
+.form-group{
   transition: all 0.35s, border-radius 0s;
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   border: 1px solid #ccc;
   width: 50%;
+  margin: auto;
 }
 

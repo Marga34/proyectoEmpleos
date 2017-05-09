@@ -16,6 +16,7 @@
     color: #f1f1f1;
     border-radius: 0;
     border: none;
+    margin-right:auto;
 }
 .btn.btn-success:hover {
     background-color: #8DC63F;
@@ -28,17 +29,20 @@
     background-color: #333;
     color: #f1f1f1;
     border-radius: 0;
-    transition: .2s;
+    transition: .2s;  
+}
+
+#botoncentrado{
+   margin:0 55% 0 45%;
    
 }
 
 #descripcionoferta{
-  margin-left: 480px;
+  bottom:0;
+  margin-left:500px ;
 }
 #eliminaroferta{
-  margin-right:-35px;
  bottom:0;
-  
 }
 
 .btn:hover {
@@ -64,6 +68,11 @@ p{
     font-size: 1.1em;
 }
 
+span{
+    color:#8DC63F;
+    text-decoration: underline;
+}
+
 h2 {
     display:table-header-group;
     padding:100px 0px 50px 200px;
@@ -73,17 +82,9 @@ div.row{
     display:table-row-group;
 }
 
-a{
-    margin:auto;
-    color:#8DC63F;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-     float:right;
-}
  img{
-     margin-bottom:-50px;
-     max-height: 150px;
+     margin-top:20px;
+     max-height: 100px;
      max-width: 150px;
  }
 
