@@ -1,4 +1,4 @@
 export class Oferta {
-    constructor( public id:number, public nombre: string, public puesto: string, public resumen:string, public expandido: string ) {
+    constructor( public nombre:string, public imagenurl: string, public puesto: string, public fecha: string, public provincia: string, public salario: string, public experiencia: string, public contrato: string, public requisitos: string, public descripcion: string, public vacantes: string, public horario: string, public estudios: string, public otros: string) {
     }
 }

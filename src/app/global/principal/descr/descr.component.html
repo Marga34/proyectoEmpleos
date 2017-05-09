@@ -1,4 +1,4 @@
-<h1>
+<!--<h1>
 {{mostrar1}}
 </h1>
 <h3>
@@ -6,4 +6,70 @@
 </h3>
 <p>
 {{mostrar3}}
-</p>
+</p>-->
+
+<div id="ofertadescr">
+  <div class="panel panel-default">
+    <div class="panel-heading">Empresa</div>
+    <div class="panel-body">
+      <h2>{{oferta.nombre}}</h2>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Resumen oferta</h3>
+      </div>
+      <div class="panel-body">
+        <h3>Título oferta</h3>
+        <ul class="list-group">
+          <li class="list-group-item"><b>Puesto ofertado:</b> {{oferta.puesto}}</li>
+          <li class="list-group-item"><b>Provincia:</b>{{mostrar5}} </li>
+          <li class="list-group-item"><b>Experiencia mínima:</b> {{mostrar7}}</li>
+          <li class="list-group-item"><b>Salario:</b> {{mostrar6}}</li>
+          <li class="list-group-item"><b>Tipo de contrato:</b> {{mostrar8}}</li>
+          <li class="list-group-item"><b>Fecha de publicación: </b>  {{mostrar4}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Descripción oferta</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Puesto ofertado: </b></li>
+          <li class="list-group-item"><b>Provincia: </b></li>
+          <li class="list-group-item"><b>Requisitos :</b></li>
+          <li class="list-group-item"><b>Descripcion puesto: </b></li>
+          <li class="list-group-item"><b>Experiencia mínima: </b></li>
+          <li class="list-group-item"><b>Salario: </b></li>
+          <li class="list-group-item"><b>Tipo de contrato: </b></li>
+          <li class="list-group-item"><b>Horarios: </b></li>
+          <li class="list-group-item"><b>Número de vacantes: </b></li>
+        </ul>
+<!--// 1 = nombre
+// 2 = imagenurl 
+// 3 = puesto 
+// 4 = fecha
+// 5 = provincia 
+// 6 = salario
+// 7 = experiencia
+// 8 =contrato
+// 9 = requisitos
+// 10 = descripcion
+// 11 = vacantes
+// 12 = horario
+// 13 = estudios
+// 14 = otros-->
+
+      </div>
+      <button type="button" id="addButton" class="btn btn-success">Inscribirme a esta oferta</button>
+    </div>
+    <hr>
+  </div>
+
+  <button type="button" id="removeButton" class="btn btn-lg btn-danger">Eliminar Oferta </button>
+
+  <button type="button" id="editButton" class="btn btn-lg btn-warning">Editar Oferta</button>
+      

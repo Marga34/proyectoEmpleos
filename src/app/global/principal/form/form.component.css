@@ -1,17 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
-form{
-    padding: 100px 200px 100px 200px;
-    
+#formulario{
+    border: 1px solid #8DC63F;
+    box-shadow: 0 0 2px 1px #8DC63F inset;
+    background-color:#f1f1f1;
+    margin:113px 300px 110px 300px;
+    padding: 10px 50px 20px 50px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 17px;
-        margin-bottom: 130px;
+    position:fixed;
 }
 
-.row{
-    padding: 50px 200px 100px 200px;
+h3{
+    color: #808080;
+    margin:0 20px;
+    padding: 5px 0 20px 0;
+    text-align: Center;
 }
 
-#lista{
-    padding: 200px 200px 100px 200px;
+select{
+    height:30px;
+}
+
+input#lenguajes{
+    width: 84%;
+
+}
+.btn.btn-success{
+    padding: 10px 20px;
+    background-color: #808080;
+    box-shadow: 0 0 2px 1px #8DC63F inset;
+    color: #f1f1f1;
+    border-radius:0;
+    border: none;
+}
+.btn.btn-success:hover {
+    background-color: #8DC63F;
+     box-shadow: 0 0 2px 1px #808080 inset;
+    color: #000;
+    opacity:0.85;
+    cursor:pointer;
 }

@@ -33,9 +33,9 @@ export class FormComponent implements OnInit {
 
   }
 
- guardarDato(nombre: string, puesto: string, resumen:string, expandido:string){
+ guardarDato(nombre: string, imagenurl:string, puesto: string, fecha: string, provincia: string, salario: string, experiencia: string, contrato: string, requisitos: string, descripcion: string, vacantes: string, horario: string, estudios: string, otros: string){
    var idNueva = this.servicioService.ofertas.length;
-  this.servicioService.anadirOferta( new Oferta(idNueva, nombre, puesto, resumen, expandido));
+  this.servicioService.anadirOferta( new Oferta(nombre,imagenurl, puesto, fecha, provincia, salario, experiencia, contrato, requisitos, descripcion, vacantes, horario, estudios, otros));
  }
 
    navegarAlaLista() {
@@ -47,3 +47,4 @@ export class FormComponent implements OnInit {
 
 
 }
+

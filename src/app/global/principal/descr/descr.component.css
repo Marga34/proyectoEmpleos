@@ -1,4 +1,4 @@
-h1{
+/*h1{
     margin-top: 150px;
 }
 
@@ -8,4 +8,17 @@ h3{
 
 p{
     margin-top: 20px;
+}*/
+
+p{
+    margin-top: 200px;
 }
+
+#ofertadescr{
+    margin: 150px;
+}
+
+.panel panel-default{
+    background-color: grey;
+}
+      

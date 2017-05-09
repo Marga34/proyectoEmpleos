@@ -3,5 +3,5 @@ import { DescrComponent } from '../descr/descr.component';
 
 
 export const LISTA_ROUTES: Routes = [
-    {path:'descr', component: DescrComponent}
+    {path: 'descr', component: DescrComponent}
 ];

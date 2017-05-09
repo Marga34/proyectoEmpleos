@@ -1,22 +1,62 @@
-<div class="panel panel-default">
+<!--<div class="panel panel-default">
   <div class="panel-body">
     <h3>{{oferta.nombre}}</h3>
-    <p>{{oferta.puesto}}</p>
+    <p>{{oferta.puesto}}</p>-->
+
+
+  <div class="panel-body">
+    
+    <div class="row">
+      <h2 >{{oferta.nombre}}</h2>
+      <p>{{oferta.puesto}}</p>
+      <p>{{oferta.provincia}}</p>
+      <p>{{oferta.fecha}}</p>
+    </div>
+
+    <div class="row">
+      <img src="{{oferta.imagenurl}}" alt="" class="img-responsive"> 
+      <p>{{oferta.salario}}</p>
+      <p>{{oferta.experiencia}}</p>
+      <p>{{oferta.contrato}}</p>
+    </div>
+
 
     <!--    <a [routerLink]="['/global','lista', oferta.nombre]">Descripcion detallada</a> -->
-    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Descripcion</button>
+    <button type="button" id="descripcionoferta" class="btn btn-info btn-xs " data-toggle="modal" data-target="#myModal">Descripcion</button>
+    
+    <button type="button" id="eliminaroferta" class="btn-xs btn-danger pull-right" (click)="eliminaOferta(oferta)">Eliminar</button>
+  
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">{{oferta.nombre}}</h4>
+            <h4 class="modal-title">{{oferta.puesto}}</h4>
+
+          
+
+
+
           </div>
           <div class="modal-body">
-            <p>{{oferta.puesto}}</p>
+            <li><b>Fecha de publicación: </b>{{oferta.fecha}}
+            <li><b>Provincia: </b>{{oferta.provincia}} </li>
+            <li><b>Experiencia mínima: </b> {{oferta.experiencia}}</li>
+            <li><b>Salario: </b>{{oferta.salario}}</li>
+            <li><b>Tipo de contrato: </b> {{oferta.contrato}}</li>
+            
+            <p><b>{{oferta.descripcion}}</b></p><br>
+            <p><b>Requisitos mínimos: </b>{{oferta.requisitos}}</p><br>
+            <p><b>Estudios requeridos: </b>{{oferta.estudios}}</p><br>
+            <p><b>Horario:</b> {{oferta.horario}}</p><br>
+            <p><b>Número de vacantes: </b>{{oferta.vacantes}}</p><br>
+            <p><b>Otros: </b>{{oferta.otros}}</p>
+
+            
+            
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-info" [routerLink]="['descr']" data-dismiss="modal">Editar</button>
+            <button type="button" class="btn btn-info btn-lg" [routerLink]="['descr']" data-dismiss="modal">Editar</button>
             <button type="button" class="btn btn-danger" (click)="eliminaOferta(oferta)" data-dismiss="modal">Eliminar</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
@@ -24,11 +64,9 @@
       </div>
     </div>
     <br>
-    <button type="button" class="btn-xs btn-danger pull-right" (click)="eliminaOferta(oferta)">Eliminar</button>
+    
 
     <!--    <p>{{oferta.resumen}}</p> -->
-    <a [routerLink]="['/global','lista', oferta.nombre]" (click)="mirarOferta(oferta.id)">Descripcion detallada</a>
-    <router-outlet></router-outlet>
-
-  </div>
+    
 </div>
+ 

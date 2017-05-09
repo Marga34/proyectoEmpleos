@@ -11,7 +11,7 @@ import { GLOBAL_ROUTES } from './global/global.routing';
 const APP_ROUTES: Routes = [
     //{path:'form', component: FormComponent},
     //{path:'lista', component: ListaComponent, children: LISTA_ROUTES},
-    {path:'global', component: GlobalComponent, children: GLOBAL_ROUTES},
+    {path: 'global', component: GlobalComponent, children: GLOBAL_ROUTES},
     { path: '', component: HomeComponent }
 ];
 

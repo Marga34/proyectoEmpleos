@@ -31,9 +31,12 @@ export class ListaComponent implements OnInit {
     this.router.navigate(['descr']);
   }
 
-  guardarDato(id:number, nombre: string, puesto: string, resumen:string, expandido:string){
-    this.servicioService.anadirOferta(new Oferta(id, nombre, puesto, resumen, expandido));
-  }
+  // guardarDato(id:number, nombre: string, puesto: string, resumen:string, expandido:string){
+  //   this.servicioService.anadirOferta(new Oferta(id, nombre, puesto, resumen, expandido));
+  // }
 
+guardarDato(nombre: string, imagenurl:string, puesto: string, fecha: string, provincia: string, salario: string, experiencia: string, contrato: string, requisitos: string, descripcion: string, vacantes: string, horario: string, estudios: string, otros: string) {
+    this.servicioService.anadirOferta (new Oferta( nombre,imagenurl, puesto, fecha, provincia, salario, experiencia, contrato, requisitos, descripcion, vacantes, horario, estudios, otros));
 
+}
 }
