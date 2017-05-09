@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
 .panel-body{
+    display:block;
+    float:right;
     font-family: 'Josefin Sans', sans-serif;
     padding:25px 50px 25px 50px;
-    margin:0 0 20px 100px ;
+    margin:20px 0 20px 10px ;
     background-color:#f1f1f1; 
     box-shadow: 0 0 2px 1px #8DC63F inset;
-    height: 180px;
-    width: 1000px;
+    width: 80%;
 }
 .btn.btn-success{
     padding: 10px 20px;
@@ -81,7 +82,10 @@ a{
      float:right;
 }
  img{
-     margin-bottom:-35px;
+     margin-bottom:-50px;
      max-height: 150px;
      max-width: 150px;
  }
+
+
+ 

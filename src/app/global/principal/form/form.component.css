@@ -10,6 +10,7 @@ form{
     font-size: 17px;
     position:fixed;
    
+
 }
 
 h2{
@@ -26,7 +27,7 @@ h2{
 }
 .btn.btn-success:hover {
     background-color: #8DC63F;
-     box-shadow: 0 0 2px 1px #808080 inset;
+    box-shadow: 0 0 2px 1px #808080 inset;
     color: #000;
     opacity:0.85;
     cursor:pointer;
