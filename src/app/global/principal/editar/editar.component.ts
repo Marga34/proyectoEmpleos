@@ -1,31 +1,80 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, FormArray, Validators } from '@angular/forms';
-import { Oferta } from '../lista/oferta';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ServicioService } from '../lista/servicio.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FormBuilder, FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
+import { Subscription } from 'rxjs/Rx';
+import { Oferta } from '../lista/oferta';
 
 @Component({
   selector: 'app-editar',
   templateUrl: './editar.component.html',
   styleUrls: ['./editar.component.css']
 })
-export class EditarComponent implements OnInit {
-  miFormulario: FormGroup;
-  ofertas: Array<Oferta> = [];
-  
-  constructor(private formBuilder: FormBuilder, public servicioService: ServicioService, private router: Router) { }
+export class EditarComponent implements OnInit, OnDestroy {
+  formularioOferta: FormGroup;
+  private subscripcion: Subscription;
+  private esNueva = true;
+  private oferta: Oferta;
+  private ofertaIndice: number;
 
-nombreNuevo = this.servicioService.oferta2.nombre;
-puestoNuevo = this.servicioService.oferta2.puesto;
-
-
- editarDato(nombre: string, imagenurl:string, puesto: string, fecha: string, provincia: string, salario: string, experiencia: string, contrato: string, requisitos: string, descripcion: string, vacantes: string, horario: string, estudios: string, otros: string){
-  this.servicioService.editarOferta( new Oferta(nombre,imagenurl, puesto, fecha, provincia, salario, experiencia, contrato, requisitos, descripcion, vacantes, horario, estudios, otros));
-  this.router.navigate(['global', 'lista'])
- }
-
+  constructor(private route: ActivatedRoute, private servicioService: ServicioService, private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.subscripcion = this.route.params.subscribe(
+      (params: any) => {
+        if (params.hasOwnProperty('id')) {
+          this.esNueva = false;
+          this.ofertaIndice = params['id'];
+          this.oferta = this.servicioService.getOferta(this.ofertaIndice);
+        } else {
+          this.esNueva = true;
+          this.oferta = null;
+        }
+        this.inicializarFormulario();
+      }
+    );
   }
+
+  ngOnDestroy(){
+    this.subscripcion.unsubscribe();
+  }
+
+  enviarFormulario(){
+    const ofertaNueva = this.formularioOferta.value;
+    if(this.esNueva) {
+      this.servicioService.anadirOferta(ofertaNueva);
+    } else {
+      this.servicioService.editarOferta(this.oferta, ofertaNueva);
+    }
+    this.volver();
+  }
+
+  cancelar(){
+    this.volver();
+  }
+
+  private inicializarFormulario(){
+    let nombreOferta = '';
+    let puestoOferta = '';
+    let provinciaOferta = '';
+    let descripcionOferta = '';
+
+    if (!this.esNueva) {
+    nombreOferta = this.oferta.nombre;
+    puestoOferta = this.oferta.puesto;
+    provinciaOferta = this.oferta.provincia;
+    descripcionOferta = this.oferta.descripcion;
+  }
+  this.formularioOferta = this.formBuilder.group({
+    nombre: [nombreOferta, Validators.required],
+    puesto: [puestoOferta, Validators.required],
+    provincia: [provinciaOferta, Validators.required],
+    descripcion: [descripcionOferta, Validators.required]
+  })
+}
+
+private volver(){
+  this.router.navigate(['../']);
+}
 
 }

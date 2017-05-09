@@ -1,43 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
-#editar{
-    border: 1px solid #8DC63F;
-    box-shadow: 0 0 2px 1px #8DC63F inset;
-    background-color:#f1f1f1;
-    margin:113px 300px 110px 300px;
-    padding: 10px 50px 20px 50px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 17px;
-    /*position:fixed;*/
-}
-
-h3{
-    color: #808080;
-    margin:0 20px;
-    padding: 5px 0 20px 0;
-    text-align: Center;
-}
-
-select{
-    height:30px;
-}
-
-input#lenguaje{
-    width: 84%;
-
-}
-.btn.btn-success{
-    padding: 10px 20px;
-    background-color: #808080;
-    box-shadow: 0 0 2px 1px #8DC63F inset;
-    color: #f1f1f1;
-    border-radius:0;
-    border: none;
-}
-.btn.btn-success:hover {
-    background-color: #8DC63F;
-     box-shadow: 0 0 2px 1px #808080 inset;
-    color: #000;
-    opacity:0.85;
-    cursor:pointer;
+div{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
