@@ -22,9 +22,9 @@ public oferta2: Oferta;
     this.ofertas.push(item);
   }
 
-    editarOferta(item: Oferta) {
-    this.ofertas.push(item);
-  }
+  //   editarOferta(item: Oferta) {
+  //   this.ofertas.push(item);
+  // }
 
   devolverOferta(): Array<Oferta> {
     return this.ofertas;
@@ -40,6 +40,13 @@ public oferta2: Oferta;
 
 detalleOferta(lugar: number) {
   return this.detalle = lugar;
+}
+
+getOferta(posicion: number) {
+  return this.ofertas[posicion];
+}
+editarOferta(ofertaVieja: Oferta, ofertaNueva: Oferta) {
+  this.ofertas[this.ofertas.indexOf(ofertaVieja)] = ofertaNueva;
 }
 
 }
