@@ -44,7 +44,7 @@ import { EditarComponent } from './global/principal/editar/editar.component';
     OfertaComponent,
     MiPipePipe,
     FilterPipe,
-    EditarComponent,
+    EditarComponent
 
   ],
   imports: [

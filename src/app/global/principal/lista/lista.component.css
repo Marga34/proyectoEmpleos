@@ -1,10 +1,33 @@
 
-
 .lista{
-    margin-top: 130px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 130px;
-
+    margin: 130px 50px 130px 50px;
     
 }
+
+/*----Estilos Buscador---*/
+.panel-buscador{
+    float:right;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:5px 50px 5px 50px;
+    margin:0 0 20px 10px ; 
+    background-color: black; 
+}
+ .search-form{
+    float:right;
+    width: 80%;
+    height: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:25px 50px 25px 50px;
+    margin:0px 0 20px 10px ;
+    background-color:#f1f1f1; 
+    box-shadow: 0 0 2px 1px #8DC63F inset; 
+}
+
+ .form-group{
+  transition: all 0.35s, border-radius 0s;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
