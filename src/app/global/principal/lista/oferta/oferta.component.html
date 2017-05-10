@@ -1,8 +1,10 @@
+<div *ngIf="(!check&&!check2)||((oferta.puesto=='Programador senior')&&(check2)&&!(check))||((oferta.puesto=='Programador junior')&&(!check2)&&(check))||(((oferta.puesto=='Programador junior')||(oferta.puesto=='Programador senior'))&&(check2)&&(check))">
 <div class="panel panel-default">
   <div class="panel-heading">
     <img src="{{oferta.imagenurl}}" alt="" class="img-responsive pull-right">
-    <h2>{{oferta.puesto}}</h2>
+    <h2 >{{oferta.puesto}}</h2>
     <h5>{{oferta.nombre}}</h5>
+
   </div>
   <div class="panel-body">
     <p>{{oferta.descripcioncorta}}</p>
@@ -41,4 +43,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

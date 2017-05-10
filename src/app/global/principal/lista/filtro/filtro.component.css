@@ -11,7 +11,8 @@
     background: -moz-linear-gradient(#f1f1f1,white, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#f1f1f1,white, white); /* Standard syntax */
     font-family: 'Josefin Sans', sans-serif;
-    padding-left: 60px;
+    padding-left: 40px;
+    position: absolute;
     
 }
 

@@ -16,6 +16,8 @@ export class OfertaComponent implements OnInit {
 
   @Input() oferta: Oferta;
   @Input() posicion: number;
+  @Input() check: boolean;
+  @Input() check2: boolean;
 
 
   constructor(public servicioService: ServicioService, private router: Router) { }

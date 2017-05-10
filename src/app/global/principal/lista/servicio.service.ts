@@ -19,6 +19,7 @@ new Oferta ('Everis','https://media.infojobs.net/corp/everis2_logo.gif', 'Arquit
 
 public detalle: number;
 public oferta2: Oferta;
+public saveUsername: boolean;
 
   ngOnInit() {
   }
@@ -51,6 +52,5 @@ getOferta(posicion: number) {
 editarOferta(ofertaVieja: Oferta, ofertaNueva: Oferta) {
   this.ofertas[this.ofertas.indexOf(ofertaVieja)] = ofertaNueva;
 }
-
 }
 

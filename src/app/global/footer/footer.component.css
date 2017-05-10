@@ -9,11 +9,11 @@ footer {
     right:0px;
     bottom: 0;
     position: fixed;
-    height: 80px;
+    height: 70px;
 }
 
 .icon{
-    width: 4%;
-    padding-top: 10px;
-    margin: 10px;
+    position: absolute;
+    max-width: 4%;
+    margin-top: 9px;
 }
