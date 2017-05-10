@@ -1,15 +1,4 @@
 <footer class="text-center">
-  <a id="top" class="up-arrow" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-    <!--    <img class="icon" src="./assets/icono.png"> -->
-  </a>
-  <a [routerLink]="['descr']"><h5>AUTORES</h5></a>
+     <a [routerLink]="['descr']" data-toggle="tooltip" title="Autores"><img class="icon" src="./assets/icono.png"></a>
+ 
 </footer>
-
-<script>
-  $(document).ready(function () {
-    $('#top').click(function () {
-      $('html').animate({ scrollTop: 0 }, 'fast');
-    });
-  });
-</script>

@@ -11,14 +11,15 @@
     background: -moz-linear-gradient(#f1f1f1,white, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#f1f1f1,white, white); /* Standard syntax */
     font-family: 'Josefin Sans', sans-serif;
-    padding:10px 10px 10px 20px;
+    padding-left: 60px;
+    
 }
 
 
 h4{
     font-weight:bold;
     color: #8DC63F;
-    padding-top: 20px;
+    padding-top: 60px;
     font-size: 1.5 em;
    
 }
