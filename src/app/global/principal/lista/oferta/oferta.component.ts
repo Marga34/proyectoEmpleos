@@ -37,6 +37,8 @@ export class OfertaComponent implements OnInit {
 
   navegarEditar(oferta){
     this.router.navigate(['global', 'editar',this.posicion]);
+    /*this.servicioService.oferta2=oferta;
+    this.servicioService.borraOferta(oferta); */
   }
 
 }
