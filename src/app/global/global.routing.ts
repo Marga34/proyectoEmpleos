@@ -9,5 +9,6 @@ export const GLOBAL_ROUTES: Routes = [
     {path: 'lista', component: ListaComponent},
     { path: 'lista/:nombre', component: DescrComponent },
     {path: 'form', component: FormComponent},
-    {path: 'editar', component: EditarComponent}
+    {path: 'editar/:id', component: EditarComponent},
+    {path: 'descr', component: DescrComponent}
 ];

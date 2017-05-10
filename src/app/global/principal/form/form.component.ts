@@ -26,6 +26,7 @@ export class FormComponent implements OnInit {
       'experiencia': new FormControl(),
       'contrato': new FormControl(),
       'requisitos': new FormControl(),
+      'descripcioncorta': new FormControl(),
       'descripcion': new FormControl(),
       'vacantes': new FormControl(),
       'horario': new FormControl(),
@@ -37,31 +38,8 @@ export class FormComponent implements OnInit {
   }
    guardarDato() {
 
-  //  var idNueva = this.servicioService.ofertas.length;
-
-//  guardarDato(nombre: string, imagenurl:string, puesto: string, fecha: string, provincia: string, salario: string, experiencia: string, contrato: string, requisitos: string, descripcion: string, vacantes: string, horario: string, estudios: string, otros: string){
-//   this.servicioService.anadirOferta( new Oferta(nombre,imagenurl, puesto, fecha, provincia, salario, experiencia, contrato, requisitos, descripcion, vacantes, horario, estudios, otros));
-
-//    this.router.navigate(['global', 'lista']);
-
-//  }
-
    this.servicioService.anadirOferta(this.miFormulario.value);
-
-   /*
-   new Oferta( this.miFormulario.controls['nombre'], this.miFormulario.controls['imagenurl'], this.miFormulario.controls['puesto'], this.miFormulario.controls['fecha'], this.miFormulario.controls['provincia'], this.miFormulario.controls['salario'], this.miFormulario.controls['experiencia'], this.miFormulario.controls['contrato'], this.miFormulario.controls['requisitos'], this.miFormulario.controls['descripcion'], this.miFormulario.controls['vacantes'], this.miFormulario.controls['horario'], this.miFormulario.controls['estudios'], this.miFormulario.controls['otros'])
-   */
   }
-
-    //   guardarDato(password: number, nombre: string, puesto: string, fecha: string, provincia: string, salario: string, experiencia: string, contrato: string, requisitos: string, descripcion: string, vacantes: string, horario: string, estudios: string, otros: string){
-
-    //    var idNueva = this.servicioService.ofertas.length;
-    //   this.servicioService.anadirOferta( new Oferta(password, nombre, puesto, fecha, provincia, salario, experiencia, contrato, requisitos, descripcion, vacantes, horario, estudios, otros));
-    //  }
-
-    // guardarDato(){
-    //   console.log(this.miFormulario);
-    // }
 
     navegarAlaLista() {
       this.router.navigate(['global', 'lista']);

@@ -63,6 +63,7 @@ export class EditarComponent implements OnInit, OnDestroy {
     let experienciaOferta = '';
     let contratoOferta = '';
     let requisitosOferta = '';
+    let descripcioncortaOferta = '';
     let descripcionOferta = '';
     let vacantesOferta = '';
     let horarioOferta = '';
@@ -79,6 +80,7 @@ export class EditarComponent implements OnInit, OnDestroy {
         experienciaOferta = this.oferta.experiencia;
         contratoOferta = this.oferta.contrato;
         requisitosOferta = this.oferta.requisitos;
+        descripcioncortaOferta = this.oferta.descripcioncorta;
         descripcionOferta = this.oferta.descripcion;
         vacantesOferta = this.oferta.vacantes;
         horarioOferta = this.oferta.horario;
@@ -97,6 +99,7 @@ export class EditarComponent implements OnInit, OnDestroy {
       contrato: [contratoOferta, Validators.required],
       requisitos: [requisitosOferta, Validators.required],
       descripcion: [descripcionOferta, Validators.required],
+      descripcioncorta: [descripcioncortaOferta, Validators.required],
       vacantes: [vacantesOferta, Validators.required],
       horario: [horarioOferta, Validators.required],
       estudios: [estudiosOferta, Validators.required],
@@ -105,7 +108,7 @@ export class EditarComponent implements OnInit, OnDestroy {
   }
 
   private volver() {
-    this.router.navigate(['../']);
+    this.router.navigate(['/global','lista']);
   }
 
 }

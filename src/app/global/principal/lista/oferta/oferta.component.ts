@@ -15,6 +15,7 @@ import { EditarComponent } from '../../editar/editar.component';
 export class OfertaComponent implements OnInit {
 
   @Input() oferta: Oferta;
+  @Input() posicion: number;
 
 
   constructor(public servicioService: ServicioService, private router: Router) { }
@@ -33,9 +34,9 @@ export class OfertaComponent implements OnInit {
   }
 
   navegarEditar(oferta){
-    this.router.navigate(['global', 'editar']);
-    this.servicioService.oferta2=oferta;
-    this.servicioService.borraOferta(oferta); 
+    this.router.navigate(['global', 'editar',this.posicion]);
+    /*this.servicioService.oferta2=oferta;
+    this.servicioService.borraOferta(oferta); */
   }
 
 }
