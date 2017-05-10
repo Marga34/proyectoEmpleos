@@ -13,6 +13,7 @@
         </form>
  
     </div>
-    <app-filtro></app-filtro>
-    <app-oferta *ngFor="let oferta of ofertas | miPipe:search.value; let posicion = index" [oferta]="oferta" [posicion]="posicion"></app-oferta>
+    <app-filtro (clicked)="cambiado($event)" (clicked2)="cambiado2($event)"></app-filtro>
+    <app-oferta *ngFor="let oferta of ofertas | miPipe:search.value; let posicion = index" [oferta]="oferta" [posicion]="posicion" [check]="check" [check2]="check2"></app-oferta>    
+    
 </div>

@@ -22,8 +22,6 @@ import { PrincipalComponent } from './global/principal/principal.component';
 import { OfertaComponent } from './global/principal/lista/oferta/oferta.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MiPipePipe } from './mi-pipe.pipe';
-import { FilterPipe } from './global/header/filter.pipe';
-import { EditarComponent } from './global/principal/editar/editar.component';
 
 
 
@@ -43,8 +41,7 @@ import { EditarComponent } from './global/principal/editar/editar.component';
     PrincipalComponent,
     OfertaComponent,
     MiPipePipe,
-    FilterPipe,
-    EditarComponent
+
 
   ],
   imports: [

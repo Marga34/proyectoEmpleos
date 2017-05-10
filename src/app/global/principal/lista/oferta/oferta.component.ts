@@ -16,6 +16,8 @@ export class OfertaComponent implements OnInit {
 
   @Input() oferta: Oferta;
   @Input() posicion: number;
+  @Input() check: boolean;
+  @Input() check2: boolean;
 
 
   constructor(public servicioService: ServicioService, private router: Router) { }
@@ -35,8 +37,6 @@ export class OfertaComponent implements OnInit {
 
   navegarEditar(oferta){
     this.router.navigate(['global', 'editar',this.posicion]);
-    /*this.servicioService.oferta2=oferta;
-    this.servicioService.borraOferta(oferta); */
   }
 
 }
