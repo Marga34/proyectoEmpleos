@@ -14,5 +14,6 @@
  
     </div>
     <app-filtro></app-filtro>
+
     <app-oferta *ngFor="let oferta of ofertas | miPipe:search.value" [oferta]="oferta"></app-oferta>
 </div>
