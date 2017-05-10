@@ -1,27 +1,18 @@
 <div class="lista">
     <div id="panel-buscador">
         <form action="" class="search-form">
-                <div class="form-group has-feedback">
+            
+            <div class="form-group has-feedback">
+
                 <label for="search" class="sr-only">Buscar</label>
                 <input type="text" class="form-control" name="search" id="search" placeholder="buscar" autocomplete="off" #search>
                 <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                </div>
-            </form>
+                
+            </div>
+
+        </form>
+ 
     </div>
     <app-filtro></app-filtro>
-   <app-oferta *ngFor="let oferta of ofertas | miPipe:search.value" [oferta]="oferta"></app-oferta>
-
-   
-    
+    <app-oferta *ngFor="let oferta of ofertas | miPipe:search.value" [oferta]="oferta"></app-oferta>
 </div>
-
-
-
-<!--public id: number, public nombre: string, public puesto: string, public area: string, public experiencia: string, public contrato)!-->
-
-
-    
-  
-
-    
-    

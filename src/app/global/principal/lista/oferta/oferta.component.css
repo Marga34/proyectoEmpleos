@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
-.panel-body{
-    display:block;
-    float:right;
+.panel{
+    float: right;
+    margin-top: 10px;
     font-family: 'Josefin Sans', sans-serif;
-    padding:25px 50px 25px 50px;
-    margin:20px 0 20px 10px ;
     background-color:#f1f1f1; 
-    box-shadow: 0 0 2px 1px #8DC63F inset;
     width: 80%;
+    border-radius: 0;
 }
+
+.panel.panel-default:hover{
+    background-color: #eaf3d8;
+}
+
 .btn.btn-success{
     padding: 10px 20px;
     background-color: #808080;
@@ -22,6 +25,15 @@
     color: #000;
 }
 
+p{
+    padding-left: 30px;
+}
+
+.panel-heading{
+    padding-left: 30px;
+    
+}
+
 .btn {
     border-color: #8DC63F;
     padding: 10px 20px;
@@ -29,16 +41,6 @@
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
-   
-}
-
-#descripcionoferta{
-  margin-left: 480px;
-}
-#eliminaroferta{
-  margin-right:-35px;
- bottom:0;
-  
 }
 
 .btn:hover {
@@ -56,36 +58,12 @@
     padding: 40px 50px;
 }
 
-
-
-p{
-    display:table-cell;
-    padding: 10px 10px 10px 100px;
-    font-size: 1.1em;
-}
-
-h2 {
-    display:table-header-group;
-    padding:100px 0px 50px 200px;
-    }
-
-div.row{
-    display:table-row-group;
-}
-
-a{
-    margin:auto;
-    color:#8DC63F;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-     float:right;
-}
  img{
-     margin-bottom:-50px;
-     max-height: 150px;
-     max-width: 150px;
+    width: 120px;
  }
 
+.label.label-info{
+    background-color: #333
+}
 
  

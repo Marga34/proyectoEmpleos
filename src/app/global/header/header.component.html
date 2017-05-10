@@ -11,18 +11,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['lista']" data-toggle="tooltip" title="Refresca la lista!">
+          <span class="glyphicon glyphicon-refresh"></span>
+        </a></li>
         <li><a [routerLink]="['/']">INICIO</a></li>
         <li><a [routerLink]="['lista']">EMPLEOS</a></li>
         <li><a [routerLink]="['form']">AGREGAR</a></li>
-        <li>
-          <form action="" class="search-form">
-            <div class="form-group has-feedback">
-              <label for="search" class="sr-only">Search</label>
-              <input type="text" class="form-control" name="search" id="search" placeholder="search" autocomplete="off">
-              <span class="glyphicon glyphicon-search form-control-feedback"></span>
-            </div>
-          </form>
-        </li>
       </ul>
     </div>
   </div>

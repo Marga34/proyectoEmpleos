@@ -5,7 +5,6 @@ import { FormComponent } from './principal/form/form.component';
 import { EditarComponent } from './principal/editar/editar.component';
 import { LISTA_ROUTES } from './principal/lista/lista.routing';
 
-
 export const GLOBAL_ROUTES: Routes = [
     {path: 'lista', component: ListaComponent},
     { path: 'lista/:nombre', component: DescrComponent },

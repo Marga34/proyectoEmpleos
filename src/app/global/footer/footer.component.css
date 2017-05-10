@@ -5,10 +5,11 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
     color: gray;
     left:0px;
+    width: 100%;
     right:0px;
     bottom: 0;
     position: fixed;
-    height: 12%;
+    height: 50px;
 }
 
 .icon{

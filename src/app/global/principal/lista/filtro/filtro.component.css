@@ -1,36 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 
 #contenedor_filtro{
-    display:block;
     float:left;
     width: 18%;
-    height:600px;
-    background-color: #f1f1f1 ;
-    box-shadow: 0 0 2px 1px #8DC63F inset;
-    margin:auto;
-    padding: auto;
+    height: 3000px;
+    background: #f1f1f1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f1f1f1,white, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f1f1f1,white, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f1f1f1,white, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f1f1f1,white, white); /* Standard syntax */
     font-family: 'Josefin Sans', sans-serif;
-}
-#buscador{
-    padding:0 20px;
+    padding:10px 10px 10px 20px;
 }
 
-h3{
+
+h4{
     font-weight:bold;
     color: #8DC63F;
-    margin: 20px;
-    padding:10px;
-    text-align: Center;
+    margin: 10px;
+    font-size: 1.5 em;
+    text-decoration-line: underline;
 }
 
-p{  
-    font-size: 1.3em;
-    text-align: Center;
+p{
+    font-weight:bold;
 }
 
 input{
     color: #8DC63F;
-    font-size: 1.5em; 
     text-align: Center;
 }
 

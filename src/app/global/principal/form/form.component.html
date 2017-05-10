@@ -1,78 +1,80 @@
+<div class="row">
+  <div class="col-md-12">
+    <form [formGroup]="miFormulario" (ngSubmit)="guardarDato()" (ngSubmit)="navegarAlaLista()">
+      <h2>Agregar oferta de empleo</h2>
+      <hr>
 
-<form [formGroup]="miFormulario" (ngSubmit)="guardarDato()" (ngSubmit)="navegarAlaLista()">
-  <h2>Agregar oferta de empleo</h2>
- 
 
 
-  <div class="row">
+      <div class="row">
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="nombre">Nombre de empresa</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ej: Teléfonica" formControlName="nombre">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="nombre">Nombre de empresa</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ej: Teléfonica" formControlName="nombre">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="imagenurl">Url imagen</label>
+            <input type="text" class="form-control" id="imagenurl">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="puesto">Puesto de trabajo</label>
+            <input type="text" class="form-control" id="puesto" placeholder="Ej: Programador junior" formControlName="puesto">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="fecha">Fecha de publicación</label>
+            <input type="text" class="form-control" id="fecha" placeholder="Ej: 11/05/2017" formControlName="fecha">
+          </div>
+        </div>
+
       </div>
-    </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-         <label for="imagenurl">Url imagen</label>             
-         <input type="text" class="form-control" id="imagenurl"> 
-      </div>
-    </div>
+      <div class="row">
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="puesto">Puesto de trabajo</label>
-        <input type="text" class="form-control" id="puesto" placeholder="Ej: Programador junior" formControlName="puesto">
-      </div>
-    </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="provincia">Área geográfica</label>
+            <input type="text" class="form-control" id="provincia" placeholder="Ej: Madrid, Madrid (España)" formControlName="provincia">
+          </div>
+        </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="fecha">Fecha de publicación</label>
-        <input type="text" class="form-control" id="fecha" placeholder="Ej: 11/05/2017" formControlName="fecha">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row">
-
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="provincia">Área geográfica</label>
-        <input type="text" class="form-control" id="provincia" placeholder="Ej: Madrid, Madrid (España)" formControlName="provincia">
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="salario">Salario</label>
-        <select class="form-control" formControlName="salario">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="salario">Salario</label>
+            <select class="form-control" formControlName="salario">
               <option>18.000 - 24.000€ bruto/año</option>
               <option>24.000 - 30.000€ bruto/año</option>
               <option>30.000 - 36.000€ bruto/año</option>
               <option>A determinar</option>
             </select>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="experiencia">Experiencia</label>
-        <select class="form-control" formControlName="experiencia">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="experiencia">Experiencia</label>
+            <select class="form-control" formControlName="experiencia">
             <option>Sin experiencia</option>
             <option>Menos de 1 año</option>
             <option>Menos de 3 años</option>
             <option>Más de 5 años</option>
           </select>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="contrato">Tipo de contrato</label>
-        <select class="form-control" formControlName="contrato">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="contrato">Tipo de contrato</label>
+            <select class="form-control" formControlName="contrato">
             <option>Prácticas</option>
             <option>Temporal</option>
             <option>Indefinido</option>
@@ -80,38 +82,42 @@
             <option>Freelance</option>
             <option>A determinar</option>
           </select>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <div class="form-group">
-        <label for="requisitos">Requisitos mínimos</label>
-        <input type="text" class="form-control" id="requisitos" placeholder="Ej:JV, HTML5, CSS, Angular" formControlName="requisitos">
+          </div>
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="descripcion">Descripción</label>
-        <br>
-        <textarea name="mensaje" placeholder="Breve descripción de la oferta laboral" rows="3" cols="112" formControlName="descripcion"></textarea>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="vacantes">Número de vacantes</label>
-        <input type="num" class="form-control" id="vacantes" placeholder="Ej: 2" required formControlName="vacantes">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="requisitos">Requisitos mínimos</label>
+            <input type="text" class="form-control" id="requisitos" placeholder="Ej:JV, HTML5, CSS, Angular" formControlName="requisitos">
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <input type="text" placeholder="Breve descripción de la oferta laboral" formControlName="descripcion">
+          </div>
+        </div>
+      </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="horario">Horario</label>
-        <select class="form-control" formControlName="horario">
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="vacantes">Número de vacantes</label>
+            <input type="num" class="form-control" id="vacantes" placeholder="Ej: 2" required formControlName="vacantes">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="horario">Horario</label>
+            <select class="form-control" formControlName="horario">
             <option>Jornada Completa</option>
             <option>Media Jornada</option>
             <option>Intensivo mañana</option>
@@ -119,13 +125,13 @@
             <option>Por horas</option>
             <option>A determinar</option>
           </select>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="estudios">Estudios mínimos</label>
-        <select class="form-control" formControlName="estudios">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="estudios">Estudios mínimos</label>
+            <select class="form-control" formControlName="estudios">
             <option>Ingeniería</option>
             <option>Ingenería Técnica</option>
             <option>Bachillerato</option>
@@ -133,41 +139,25 @@
             <option>Módulo FP1</option>
             <option>E.S.O.</option>
           </select>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="otros">Otros datos</label>
-        <input type="text" class="form-control" id="otros" placeholder="" formControlName="otros">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="otros">Otros datos</label>
+            <input type="text" class="form-control" id="otros" placeholder="" formControlName="otros">
+          </div>
+        </div>
       </div>
-    </div>
+
+      <br>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-7">
+          <button type="submit" class="btn btn-success btn-lg">Agregar Oferta</button>
+        </div>
+      </div>
+
+    </form>
   </div>
-
-
-  <div class="row">
-    <div class="col-md-5"></div>
-    <div class="col-md-7">
-      <button type="submit" class="btn btn-success btn-lg">Agregar Oferta</button>
-    </div>
-  </div>
-
-</form>
-
-<!--
-<div id="lista">
-<span>Nombre</span>
-<input type="text" #nombre>
-<span>Puesto</span>
-<input type="text" #puesto>
-<span>Resumen</span>
-<input type="text" #resumen>
-<span>Expandido</span>
-<input type="text" #expandido>
-</div> 
-
-    <div class="row">
-      <div>
-        <button type="button" class="btn btn-success" (click)="guardarDato(nombre.value, puesto.value, resumen.value, expandido.value)" (click)="navegarAlaLista()">Enviar datos</button>
-      </div>
-    </div>-->
+</div>

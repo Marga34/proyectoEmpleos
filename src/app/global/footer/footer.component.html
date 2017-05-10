@@ -1,8 +1,14 @@
 <footer class="text-center">
-  
-  <img class="icon" src="./assets/icono.png">
-  <br>
-  <p>PROYECTO</p>
-
-  
+  <a href="#top" class="up-arrow" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    <!--    <img class="icon" src="./assets/icono.png"> -->
+  </a>
 </footer>
+
+<script>
+  $(document).ready(function () {
+    $('top').click(function () {
+      $('html').animate({ scrollTop: 0 }, 'fast');
+    });
+  });
+</script>

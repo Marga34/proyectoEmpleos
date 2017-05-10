@@ -35,13 +35,13 @@ export class EditarComponent implements OnInit, OnDestroy {
     );
   }
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.subscripcion.unsubscribe();
   }
 
-  enviarFormulario(){
+  enviarFormulario() {
     const ofertaNueva = this.formularioOferta.value;
-    if(this.esNueva) {
+    if (this.esNueva) {
       this.servicioService.anadirOferta(ofertaNueva);
     } else {
       this.servicioService.editarOferta(this.oferta, ofertaNueva);
@@ -49,32 +49,65 @@ export class EditarComponent implements OnInit, OnDestroy {
     this.volver();
   }
 
-  cancelar(){
+  cancelar() {
     this.volver();
   }
 
-  private inicializarFormulario(){
+  private inicializarFormulario() {
     let nombreOferta = '';
+    let imagenurlOferta = '';
     let puestoOferta = '';
+    let fechaOferta = '';
     let provinciaOferta = '';
+    let salarioOferta = '';
+    let experienciaOferta = '';
+    let contratoOferta = '';
+    let requisitosOferta = '';
     let descripcionOferta = '';
+    let vacantesOferta = '';
+    let horarioOferta = '';
+    let estudiosOferta = '';
+    let otrosOferta = '';
 
     if (!this.esNueva) {
-    nombreOferta = this.oferta.nombre;
-    puestoOferta = this.oferta.puesto;
-    provinciaOferta = this.oferta.provincia;
-    descripcionOferta = this.oferta.descripcion;
+        nombreOferta = this.oferta.nombre;
+        imagenurlOferta = this.oferta.imagenurl;
+        puestoOferta = this.oferta.puesto;
+        fechaOferta = this.oferta.fecha;
+        provinciaOferta = this.oferta.provincia;
+        salarioOferta = this.oferta.salario;
+        experienciaOferta = this.oferta.experiencia;
+        contratoOferta = this.oferta.contrato;
+        requisitosOferta = this.oferta.requisitos;
+        descripcionOferta = this.oferta.descripcion;
+        vacantesOferta = this.oferta.vacantes;
+        horarioOferta = this.oferta.horario;
+        estudiosOferta = this.oferta.estudios;
+        otrosOferta = this.oferta.otros;
+
+    }
+    this.formularioOferta = this.formBuilder.group({
+      nombre: [nombreOferta, Validators.required],
+      imagenurl: [imagenurlOferta, Validators.required],
+      puesto: [puestoOferta, Validators.required],
+      fecha: [fechaOferta, Validators.required],
+      provincia: [provinciaOferta, Validators.required],
+      salario: [salarioOferta, Validators.required],
+      experiencia: [experienciaOferta, Validators.required],
+      contrato: [contratoOferta, Validators.required],
+      requisitos: [requisitosOferta, Validators.required],
+      descripcion: [descripcionOferta, Validators.required],
+      vacantes: [vacantesOferta, Validators.required],
+      horario: [horarioOferta, Validators.required],
+      estudios: [estudiosOferta, Validators.required],
+      otros: [otrosOferta, Validators.required]
+    })
   }
-  this.formularioOferta = this.formBuilder.group({
-    nombre: [nombreOferta, Validators.required],
-    puesto: [puestoOferta, Validators.required],
-    provincia: [provinciaOferta, Validators.required],
-    descripcion: [descripcionOferta, Validators.required]
-  })
-}
 
-private volver(){
-  this.router.navigate(['../']);
-}
+  private volver() {
+    this.router.navigate(['../']);
+  }
 
 }
+
+
