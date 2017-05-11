@@ -23,17 +23,24 @@
         </div>
         <div class="modal-body">
               <img src="{{oferta.imagenurl}}" alt="" class="img-responsive pull-right">
-          <li><b>Fecha de publicación: </b>{{oferta.fecha}}
+            <ul>
+            <li><b>Fecha de publicación: </b>{{oferta.fecha}}
             <li><b>Provincia: </b>{{oferta.provincia}} </li>
             <li><b>Experiencia mínima: </b> {{oferta.experiencia}}</li>
             <li><b>Salario: </b>{{oferta.salario}}</li>
             <li><b>Tipo de contrato: </b> {{oferta.contrato}}</li>
-            <p><b>{{oferta.descripcion}}</b></p><br>
-            <p><b>Requisitos mínimos: </b>{{oferta.requisitos}}</p><br>
-            <p><b>Estudios requeridos: </b>{{oferta.estudios}}</p><br>
-            <p><b>Horario:</b> {{oferta.horario}}</p><br>
-            <p><b>Número de vacantes: </b>{{oferta.vacantes}}</p><br>
-            <p><b>Otros: </b>{{oferta.otros}}</p>
+            </ul>
+            <hr>
+            <h3>Descripcion de la oferta</h3>
+            <p class="text-justify"><b>{{oferta.descripcion}}</b></p>
+            <hr>
+            <ul>
+            <li><b>Requisitos mínimos: </b>{{oferta.requisitos}}</li>
+            <li><b>Estudios requeridos: </b>{{oferta.estudios}}</li>
+            <li><b>Horario:</b> {{oferta.horario}}</li>
+            <li><b>Número de vacantes: </b>{{oferta.vacantes}}</li>
+            <li><b>Otros: </b>{{oferta.otros}}</li>
+            </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-info" (click)="navegarEditar(oferta)" data-dismiss="modal">Editar</button>
