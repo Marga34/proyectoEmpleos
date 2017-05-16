@@ -32,9 +32,8 @@ export class FormComponent implements OnInit {
       'horario': new FormControl(),
       'estudios': new FormControl(),
       'otros': new FormControl()
-      
+
     });
-    
 
 
   }

@@ -83,3 +83,12 @@
       padding: 15px;
       font-size: 20px;
 }
+
+
+    .bs-example{
+    	margin: 20px;
+    }
+    .modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }

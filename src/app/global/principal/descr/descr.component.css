@@ -7,7 +7,7 @@
 }
 
 img{
-    width: 20%;
+    width: 15%;
 
 }
 
@@ -49,7 +49,8 @@ img{
 }
 
 p{
-    margin: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .icon{
@@ -123,3 +124,7 @@ button:hover, a:hover {
     border-radius: 50%;
 }
 
+.panel.panel-default.text-center{
+    margin-left: 20px;
+    margin-right: 20px;
+}

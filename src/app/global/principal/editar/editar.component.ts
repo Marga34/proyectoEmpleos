@@ -104,7 +104,7 @@ export class EditarComponent implements OnInit, OnDestroy {
       horario: [horarioOferta, Validators.required],
       estudios: [estudiosOferta, Validators.required],
       otros: [otrosOferta, Validators.required]
-    })
+    });
   }
 
   private volver() {
